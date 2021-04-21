@@ -28,6 +28,11 @@ we can use it in the above way as well but it doesnt make sense as directly we c
 3. file command:
 If you want to find the type of file then use the command file.
  syntax:file filename
+ This will display the file type of filename
+ 
+ cd /dev  (dev means device)
+you can get different types of files in this directory
+ 
  
 4.change directory(cd):
 a.If you want to go to your home directory then use tilde symbol ie cd ~
@@ -58,6 +63,40 @@ sed 's/ansible/pink/ig' peanut.txt
 
 If you want to make chnages to original file then use i flag ie
 sed -i 's/ansible/pink/ig' peanut.txt
+
+
+7.find command: It is similar to windows find command.
+you can find a file with its name or files which belongs to specific user or group.
+
+syntax:find / -option filename
+option can be a.-name:searching a file with its name->it will display the paths where the filename is located , if filename is located in multiple locations it will display all the paths
+
+b.-user :for files whose owner is a particular user
+c. -group :for files which belong to a particular group
+
+ex: find / -name filename
+find / -user ubuntu (it will display all files that belongs to ubuntu user)
+find / -group dev(it will display all the files which belong to the group dev)
+
+
+8.tree ->it will display the file system in tree structure 
+
+9. diff command: It will show the difference between files / directories
+
+diff file1 file2 
+diff dir1 dir2
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
