@@ -4,11 +4,38 @@ Ex: grep permit /etc/ssh/sshd_config
 Reading entire file to search a specific word will be time consuming, at that time you can use grep command. It will display all the lines which has that word in the file
 For the above example,It will display all the lines which has permit in sshd_config file.
 Also need to remember that it is case sensitive. If you mention permit instead of Permit that it will not display.
-If you are not sure whether its capital letter or small letter, then you can use the flag or option -i to ignore case sensitive
+If you are not sure whether its capital letter or small letter, then you can use the flag or option -i to ignore case sensitive.
+Grep will work only on files.
 
 grep -i pattern filename
 
 grep -i permit /etc/ssh/sshd_config
+
+2.Pipe "|" command:
+Pipe symbol is represented with a vertical line ie "|".
+It is a kind of redirection, where it takes the output of one command and gives it as input to another command.
+syntax:command | command pattern
+ex:ls -ltr | grep simple (here file name is not required at the end as output of la -ltr is considered as input for grep command ie it will search for simple word in the output of ls -ltr).
+It will display all the lines which has simple in the output of ls -ltr.
+one more example:if you want to search all the directories in the output of ls -ltr ie basically the first letter will be d if its a directory then u can use
+ls -ltr | grep ^d
+
+
+
+3. file command:
+If you want to find the type of file then use the command file.
+ syntax:file filename
+ 
+4.change directory:
+a.If you want to go to your home directory then use tilde symbol ie cd ~
+b.If you want to navigate to a specific directory from anywhere from the file system then you can either use relative path or absolute path.
+cd relative path( path that doesnt start from /)
+cd absolute path(path that starts from root ie /)
+cd directoryname(if that directory is present in current directory)
+c. If you want to go to your parent directory from current directory then use cd ..
+
+
+
 
 
 
