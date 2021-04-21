@@ -1,0 +1,16 @@
+1. Grep(global regular expression print):It is used to search for a pattern.
+Syntax: grep pattern filename/filename along with path
+Ex: grep permit /etc/ssh/sshd_config
+Reading entire file to search a specific word will be time consuming, at that time you can use grep command. It will display all the lines which has that word in the file
+For the above example,It will display all the lines which has permit in sshd_config file.
+Also need to remember that it is case sensitive. If you mention permit instead of Permit that it will not display.
+If you are not sure whether its capital letter or small letter, then you can use the flag or option -i to ignore case sensitive
+
+grep -i pattern filename
+
+grep -i permit /etc/ssh/sshd_config
+
+
+
+
+
