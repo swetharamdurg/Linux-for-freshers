@@ -20,19 +20,47 @@ It will display all the lines which has simple in the output of ls -ltr.
 one more example:if you want to search all the directories in the output of ls -ltr ie basically the first letter will be d if its a directory then u can use
 ls -ltr | grep ^d
 
+=>cat peanut.txt | grep -i s
+we can use it in the above way as well but it doesnt make sense as directly we can use grep -i s peanut.txt
+
 
 
 3. file command:
 If you want to find the type of file then use the command file.
  syntax:file filename
  
-4.change directory:
+4.change directory(cd):
 a.If you want to go to your home directory then use tilde symbol ie cd ~
 b.If you want to navigate to a specific directory from anywhere from the file system then you can either use relative path or absolute path.
 cd relative path( path that doesnt start from /)
 cd absolute path(path that starts from root ie /)
 cd directoryname(if that directory is present in current directory)
 c. If you want to go to your parent directory from current directory then use cd ..
+
+5.pwd(print working directory):
+It will show the present working directory
+
+6.sed command(stream editor):It is used to search for a word in the file and replace with the required in the output.
+Note: It will only make changes in the output but it will not make any changes to the original file.But with option i you can change in the file too
+
+If you want to just change in the out put then use
+sed 's/existingWord/wordToBeReplaced' filename  
+example:sed 's/ansible/pink' peanut.txt , this will search for ansible in peanut.txt and replace it with pink in the output only , not in the original file. And only it will replace ansible
+not ansible.cfg or Ansible.cfg ie its case sensitive
+
+If you want even to consider extn along with word ie if that is part of the word ,then also if you want to consider then use flag g ie global
+example:sed 's/ansible/pink/g' peanut.txt
+s stands for search
+Here it will replace ansible.cfg not Ansible
+
+If you want to ignore case sensitive then use i option
+sed 's/ansible/pink/ig' peanut.txt
+
+If you want to make chnages to original file then use i flag ie
+sed -i 's/ansible/pink/ig' peanut.txt
+
+
+
 
 
 
