@@ -1,1 +1,16 @@
+There are mainly 3 types of users in linux.
+1.Root user or super user:This user is the most powerful user. It has all previledges. 
+2. Normal users: Users created by root user.
+3.System user: user created by software or applications ex: tomcat
+
+Home directory of root user ie /root
+go there and type: whoami 
+
+if you want to know more about the user then give: id username ie id root
+
+All the users information is stored in /etc/passwd
+
+cat /etc/passwd
+
+
 
