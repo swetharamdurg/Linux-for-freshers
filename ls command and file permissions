@@ -6,3 +6,7 @@ Permissions are applied in 3 ways:read,write and execute.
 r-Read means read only
 w-Write means write,edit,append and delete
 x-execute means to run/execute a prog
+
+8 attributes, 
+10 bits , 1st one file type, 2to4 rwx related to owner of the file, 5to7 rwx related to group to which file belongs to and 8to10 rwx related to other users.
+cd /tmp -if u create files in tmp all users can access it
