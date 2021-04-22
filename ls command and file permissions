@@ -1,0 +1,8 @@
+ls
+ls -l
+Before trying to understand all the details ,we need to know about file permissions.
+Permissions are applied at 3 levels:Owner/user level, group level and others level
+Permissions are applied in 3 ways:read,write and execute. 
+r-Read means read only
+w-Write means write,edit,append and delete
+x-execute means to run/execute a prog
