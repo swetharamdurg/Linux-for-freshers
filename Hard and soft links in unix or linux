@@ -2,11 +2,22 @@ In simple words, a link is like a pointer in a programming language, that points
 There are two types of links,a.soft link or symbolic link. 
 b.hard link
 
-In soft link if you delete the original file then you will not be able to get the original file as you will have only path  but where as in hard link ,
+Softlink is like a shorcut feature in windows system. In soft link if you delete the original file then you will not be able to get the original file as you will have only path  but where as in hard link ,
 it basically points to the source file and hence we can get the file.
 In hard link basically it creates a copy of original file where as soft link is just a link(path) to the original file.
+
+you can create soft link to a directory but you cannot create hard link to a directory as it creates infinite loop or recursive loop which breaks the file system. 
+
+Soft Link contains the path for original file and not the contents.hard Links have actual file contents
+soft link has different inode number and file permissions than original file,hard link has the same inode number and permissions of original file.
+In Hard link permissions will be updated if we change the permissions of source file,but in soft link permissions will not be updated.
+Removing soft link doesn’t affect anything but removing original file, the link becomes “dangling” link which points to nonexistent file.But deleting original file when there is hard link we can still have the content.
+as its a mirror copy of original file.
 
 syntax to create hard link is 
 ln [orinigalFileName] [HardlinkName]
 ln -s [orinigalFileName] [HardlinkName]
+
+An inode is a datastructure which contains info about the file like file type, file size, no of links, ownership, group etc. Each inode is identified by a unique integer number. 
+An inode is assigned to a file when it is created.
 
