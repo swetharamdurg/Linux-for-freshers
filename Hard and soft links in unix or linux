@@ -1,0 +1,12 @@
+In simple words, a link is like a pointer in a programming language, that points to a file or directory in unix/linux.
+There are two types of links,a.soft link or symbolic link. 
+b.hard link
+
+In soft link if you delete the original file then you will not be able to get the original file as you will have only path  but where as in hard link ,
+it basically points to the source file and hence we can get the file.
+In hard link basically it creates a copy of original file where as soft link is just a link(path) to the original file.
+
+syntax to create hard link is 
+ln [orinigalFileName] [HardlinkName]
+ln -s [orinigalFileName] [HardlinkName]
+
