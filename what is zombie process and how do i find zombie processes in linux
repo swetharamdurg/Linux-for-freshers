@@ -1,0 +1,2 @@
+On Unix and Unix-like computer operating systems, a zombie process or defunct process is a process that has completed execution (via the exit system call) but still has an entry in the process table: it is a process in the "Terminated state".
+Zombie processes can be found easily with the ps command. Within the ps output there is a STAT column which will show the processes current status, a zombie process will have Z as the status
