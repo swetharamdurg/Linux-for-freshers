@@ -10,3 +10,21 @@ x-execute means to run/execute a prog
 8 attributes, 
 10 bits , 1st one file type, 2to4 rwx related to owner of the file, 5to7 rwx related to group to which file belongs to and 8to10 rwx related to other users.
 cd /tmp -if u create files in tmp all users can access it
+
+ ls -ltr o/p: second column is the number of hard links to the file. For a directory, 
+the number of hard links is the number of immediate subdirectories it has plus its parent directory and itself.
+
+3rd columns- displays the file owner name
+4th column -displays the group name to which the file belong
+5th column- size of the file in bytes
+6th column-date 
+7th column -time
+8th column -filename/directoryname
+
+
+
+
+
+
+
+
