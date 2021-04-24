@@ -32,6 +32,8 @@ chmod [who] [+/-/=] [permissions] filename
 who=user/owner(u),group(g),others(o)
 permissions=read(r),write(w) and execute(x)
 ex: chmod u=wrx,g=rw,o=r file1
+chmod g-x,o-wx filename
+
 
 
 syntax for absolute method:
