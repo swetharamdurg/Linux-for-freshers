@@ -46,6 +46,11 @@ chmod 734 file1
 which means for file1, the owner has read,write and execute permissions,group members has 2+1=3 ie write and execute permissions, others have only read permission
 
 
+Changing Ownership:
+If you want to change the ownership permissions of a file/directory  then you need to login as super user.ie sudo su - n then execute chown command
+
+syntax:chown username:groupname filename/directoryname
+chown username filename/directoryname
 
 
 
