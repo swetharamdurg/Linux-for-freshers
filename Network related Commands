@@ -1,0 +1,15 @@
+1.hostname -gives the name of the server.It is stored in /etc/hostname file
+vi hostname ,and you can remove and give what ever name you want. If it has to reflect then you need to restart your system.
+Dont change your hostname in real time as it might have some DNS cinfigurations
+2.init 6 , you can use to restart your system or even
+3.reboot
+4.ping: It is used to check whether the server which i m pinging is available or not
+ex:ping google.com
+   ping ipaddress 
+control c to come out
+
+5.wget: This command is used to download packages(ex if you want to download tomcat on linux system)
+6.Ifconfig is used to find the IP address of your system
+7.curl is used to access application as a browser in linux
+ex:curl google.com
+The use of this command is once you have deployed your application , from your local system you can check whether its up or not.
